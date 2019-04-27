@@ -41,9 +41,23 @@ public class Instruments {
      */
     private Double trade_increment;
 
-    public String getInstrument_id() { return instrument_id; }
+    private String alias;
 
-    public void setInstrument_id(String instrument_id) { this.instrument_id = instrument_id; }
+    public String getAlias() {
+        return alias;
+    }
+
+    public void setAlias(String alias) {
+        this.alias = alias;
+    }
+
+    public String getInstrument_id() {
+        return instrument_id;
+    }
+
+    public void setInstrument_id(String instrument_id) {
+        this.instrument_id = instrument_id;
+    }
 
 
     public String getQuote_currency() {
@@ -54,9 +68,13 @@ public class Instruments {
         this.quote_currency = quote_currency;
     }
 
-    public Double getTick_size() { return tick_size; }
+    public Double getTick_size() {
+        return tick_size;
+    }
 
-    public void setTick_size(Double tick_size) { this.tick_size = tick_size; }
+    public void setTick_size(Double tick_size) {
+        this.tick_size = tick_size;
+    }
 
     public Double getContract_val() {
         return contract_val;
@@ -90,7 +108,11 @@ public class Instruments {
         this.trade_increment = trade_increment;
     }
 
-    public String getUnderlying_index() { return underlying_index; }
+    public String getUnderlying_index() {
+        return underlying_index;
+    }
 
-    public void setUnderlying_index(String underlying_index) { this.underlying_index = underlying_index; }
+    public void setUnderlying_index(String underlying_index) {
+        this.underlying_index = underlying_index;
+    }
 }
