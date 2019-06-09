@@ -140,7 +140,7 @@ public class FuturesTradeAPITests extends FuturesAPIBaseTests {
     @Test
     public void testGetOrder() {
         long orderId = 1692325459303424L;
-        JSONObject result = tradeAPIService.getOrder(instrument_id, orderId);
+        JSONObject result = tradeAPIService.getOrder(instrument_id, String.valueOf(orderId));
         toResultString(LOG, "Get-Order", result);
     }
 
